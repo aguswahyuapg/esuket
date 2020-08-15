@@ -80,7 +80,7 @@
                         <p class="mb-0">© <script>
                                 document.write(new Date().getFullYear())
                             </script> {{ config('app.name') }}. Crafted with <i class="mdi mdi-heart text-danger"></i>
-                            by Hiskia</p>
+                            by PTI</p>
                     </div>
 
                 </div>

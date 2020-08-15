@@ -60,6 +60,9 @@
             <tr class='active'>
               <td colspan="2"><strong><i class='fa fa-bars'></i> Detail Surat Lanjutan</strong></td>
             </tr>
+            <tr class='active'>
+              <td colspan="2"><strong>(Masukan Nomor Surat Terlebih Dahulu Kemudian Simpan)</strong></td>
+            </tr>
           </tbody>
         </table>
         <form class="custom-validation" method="POST" action="{{ route('admin.submissions.update', $submission->id) }}"
@@ -99,18 +102,19 @@
           @endforeach
           <div class="form-group mb-0">
             <div>
-              <button type="submit" class="btn btn-primary waves-effect waves-light mr-1">
-                <i class="mdi mdi-pencil"></i>
-                Edit
-              </button>
-              <button type="submit" form="form-print" class="btn btn-warning waves-effect waves-light mr-1"><i
-                  class="mdi mdi-printer-check"></i>
-                Cetak</button>
               @foreach($signatories as $signatory)
               <button type="submit" form="form-print-{{ $signatory->id }}"
                 class="btn btn-danger waves-effect waves-light mr-1"><i class="mdi mdi-printer-check"></i>
                 Cetak Sebagai {{ $signatory->position }}</button>
               @endforeach
+              <button type="submit" class="btn btn-primary waves-effect waves-light mr-1">
+                <i class="mdi mdi-pencil"></i>
+                Simpan
+              </button>
+              <button type="submit" form="form-print" class="btn btn-warning waves-effect waves-light mr-1"><i
+                  class="mdi mdi-printer-check"></i>
+                Cetak</button>
+              
             </div>
           </div>
         </form>

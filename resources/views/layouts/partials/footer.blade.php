@@ -5,7 +5,7 @@
                 © <script>
                     document.write(new Date().getFullYear())
                 </script> {{ config('app.name') }}<span class="d-none d-sm-inline-block"> - Crafted with <i
-                        class="mdi mdi-heart text-danger"></i> by Hiskia.</span>
+                        class="mdi mdi-heart text-danger"></i> by PTI</span>
             </div>
         </div>
     </div>
